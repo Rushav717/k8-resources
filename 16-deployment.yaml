@@ -22,7 +22,7 @@ spec: #replica set
     spec:
       containers:
       - name: nginx
-        image: rushhav717/nginx:1.0 
+        image: rushhav717/deployment:1.0 
         ports:
         - containerPort: 80
 ---
