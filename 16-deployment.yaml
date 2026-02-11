@@ -10,15 +10,15 @@ spec: #replica set
   replicas: 3
   selector:
     matchLabels:
-    app: nginx
-    tier: frontend
-    purpose: deployment
+      app: nginx
+      tier: frontend
+      purpose: deployment
   template:  #pod template
     metadata:
       labels:
-    app: nginx
-    tier: frontend
-    purpose: deployment
+        app: nginx
+        tier: frontend
+        purpose: deployment
     spec:
       containers:
       - name: nginx
