@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: labels      #these are labels for a pod
+  project: expense
+  environment: dev
+  component: backend
+spec:
+  containers:
+  - name: nginx
+    image: nginx
