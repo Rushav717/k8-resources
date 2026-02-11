@@ -2,9 +2,10 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: labels      #these are labels for a pod
-  project: expense
-  environment: dev
-  component: backend
+  labels:
+    project: expense
+    environment: dev
+    component: backend
 spec:
   containers:
   - name: nginx
