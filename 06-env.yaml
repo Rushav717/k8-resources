@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      env:
+      - name: Course
+        value: Devsecops
+      - name: mentor
+        value: sivakumar reddy
+      - name: Duration
+        value: 120hrs
