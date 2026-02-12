@@ -28,3 +28,21 @@ spec:
   - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-static
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-lb
+spec:
+  type: LoadBalancer
+  selector:
+    project: expense
+    environment: dev
+    component: backend
+    version: 1.0.0
+    demo: lb
+  ports:
+    - protocol: TCP
+      port: 80 #service port
+      targetPort: 80
+      nodePort: 30007
