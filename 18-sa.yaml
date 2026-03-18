@@ -8,8 +8,9 @@ spec:
   containers:
   - name: nginx
     image: nginx
-  - mountPath: /secrets
-    name: secret-volume
+    volumeMounts:
+    - mountPath: /secrets
+      name: secret-volume
   initContainers:
   - name: awscli
     image: amazon/aws-cli
