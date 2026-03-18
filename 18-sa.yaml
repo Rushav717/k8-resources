@@ -4,7 +4,7 @@ metadata:
   name: sa-demo
   namespace: expense
 spec:
-  serviceAccount: expense-mysql-secret
+  serviceAccountName: expense-mysql-secret
   containers:
   - name: nginx
     image: nginx
