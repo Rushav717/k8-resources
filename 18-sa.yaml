@@ -20,5 +20,4 @@ spec:
       name: secret-volume
   volumes:
   - name: secret-volume
-    emptyDir:
-      sizeLimit: {}
+    emptyDir: {}
